@@ -1,6 +1,13 @@
 # RCM-OpenMP
 An implementation of the Reverse Cuthill McKee algorithm for Sparse matrix premutation using OpenMp
 
+# About the algorithm
+In the RCM algorithm the goal is to find a premutation that will reduce the bandwith of a Sparse Matrix.
+For this implementation the matrices are assumed to be symmetric and all non-zero elements are equal to one.
+The Matrix is stored as pairs of indices : (i,j) such that A(i,j) = 1 , which is a very common way of storing such matrixes and all the matrixes found in the collection were stored this way.
+We also note that the vector storing the j indices is always sorted and we take advantage that fact in our implementation.
+
+
 # How to Use
 
 The project structure is :
@@ -22,12 +29,13 @@ The programm takes as input 4 command line arguments :
   3)The name of the binary file that the matrix is stored in.                                                                                                                                                           
   4)The name of the output file, the premutation vector will be stored in that file.                                                                                                
  
+ # Sparse Matrixes Collection
  For my exepriments i used Sparse Matrixes from the UF Sparse Matrix Collection at : https://www.cise.ufl.edu/research/sparse/matrices/list_by_id.html                                                                                                                                                                                                
  
  I have provided some matrixes as bin files in the Sparse_Collection_Bin.zip file and a collection of matlab scripts that can take 
  a downloaded matrix from a collection as '.mat' file and convert it to a bin file that the programm can read.                                                                                                 
  Information about the matrixes (size,number of non zeros...) are provided in the .xlsx allong with the command line input you need in order to run the programm for a given matrix.                                                                                                                                                                  
- 
+ # Resaults 
  Finally to compare the resaulting premutations i used matlab and spy plot's and compared the resaults with matlabs version
  and to compare the execution time i used a c++ version of the rcm algorithm implemented in the boost library :
  https://www.boost.org/doc/libs/1_46_0/libs/graph/doc/cuthill_mckee_ordering.html                                                                                                                                                
