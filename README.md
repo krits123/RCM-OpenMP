@@ -33,8 +33,11 @@ The programm takes as input 4 command line arguments :
  For my exepriments i used Sparse Matrixes from the UF Sparse Matrix Collection at : https://www.cise.ufl.edu/research/sparse/matrices/list_by_id.html                                                                                                                                                                                                
  
  I have provided some matrixes as bin files in the Sparse_Collection_Bin.zip file and a collection of matlab scripts that can take 
- a downloaded matrix from a collection as '.mat' file and convert it to a bin file that the programm can read.                                                                                                 
+ a downloaded matrix from a collection as '.mat' file and convert it to a bin file that the programm can read.                
+ You can load easilly the sparse matrix with "LoadArray(filename)" function and save to bin with the "write2BinFile2(filename,SpMat)".
  Information about the matrixes (size,number of non zeros...) are provided in the .xlsx allong with the command line input you need in order to run the programm for a given matrix.                                                                                                                                                                  
+ i.e. In order to the programm run for the matrix stored in large.bin and store the premutation in res_large.bin you can type:         
+ >> ./main_openmp.exe 28924 2043492 large.bin res_large.bin
  # Resaults 
  Finally to compare the resaulting premutations i used matlab and spy plot's and compared the resaults with matlabs version
  and to compare the execution time i used a c++ version of the rcm algorithm implemented in the boost library :
