@@ -7,7 +7,7 @@ The project structure is :
 
 |-- Makefile                                                                                                                                             
 |-- lib/                                                                                                                                                  
-         -rcm_omp.a
+         -rcm_omp.a                                                                                                                                                                                                                       
 |-- src/                                                                                                                                                                            
         -main.c                                                                                                                                                                                                
         -rcm_omp.c                                                                                                                                                                           
