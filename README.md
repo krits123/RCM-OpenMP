@@ -6,7 +6,7 @@ An implementation of the Reverse Cuthill McKee algorithm for Sparse matrix premu
 The project structure is :
 
 |-- Makefile
-|-- lib/
+|-- lib/                                                                                                                                                                   
          -rcm_omp.a
 |-- src/
         -main.c
