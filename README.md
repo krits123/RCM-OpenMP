@@ -21,7 +21,7 @@ The project structure is :
 |-- inc/                                                                                                                                                                                              
         -rcm_omp.h                                                                                                                                                                                                                                          
                                                                                                                                                                            
-You can type make lib to compile the "rcm_omp.c" and create a library inside the lib folder or make to build the whole project and create an executable with the name "./main_openmp.exe".
+You can type "make lib" to compile the "rcm_omp.c" and create a library inside the lib folder or "make" to build the whole project and create an executable with the name "./main_openmp.exe".
 Make clean can also be used.                                                                                                                                      
 The programm takes as input 4 command line arguments :                                                                                                                              
   1)Size of the "n" of the Sparse Matrix(The matrix is n rows by n collumns).                                                                                                                                  
