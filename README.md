@@ -38,7 +38,7 @@ The programm takes as input 4 command line arguments :
  Information about the matrixes (size,number of non zeros...) are provided in the .xlsx allong with the command line input you need in order to run the programm for a given matrix.                                                                                                                                                                  
  i.e. In order to the programm run for the matrix stored in large.bin and store the premutation in res_large.bin you can type:         
  >> ./main_openmp.exe 28924 2043492 large.bin res_large.bin
- # Resaults 
+ # Results 
  Finally to compare the resaulting premutations i used matlab and spy plot's and compared the resaults with matlabs version
  and to compare the execution time i used a c++ version of the rcm algorithm implemented in the boost library :
  https://www.boost.org/doc/libs/1_46_0/libs/graph/doc/cuthill_mckee_ordering.html                                                                                                                                                
